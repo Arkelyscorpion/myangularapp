@@ -7,22 +7,7 @@
 </div>
 
 <div>
-    Rooms List :
-
-    <table>
-        <tr>
-            <th>Room Number</th>
-            <th>Room Price </th>
-            <th>Check in Time</th>
-            <th>Check out Time</th>
-        </tr>
-        <tr *ngFor="let room of rooms">
-            <td>{{room.roomNumber}}</td>
-            <td>{{room.price}}</td>
-            <td>{{room.checkinTime | date}}</td>
-            <td>{{room.checkoutTime | date}}</td>
-        </tr>
-    </table>
+<app-rooms-list [rooms]="rooms"></app-rooms-list>
 </div>
 
 
